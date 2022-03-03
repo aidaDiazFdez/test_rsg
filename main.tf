@@ -1,13 +1,3 @@
-terraform {
-  required_version = ">= 0.12"
-}
-
-provider "azurerm" {
-  features {}
-  skip_provider_registration = true
-}
-
-
 locals {
   regions = {
     brazilsouth = "zb1"

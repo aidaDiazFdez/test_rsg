@@ -10,7 +10,7 @@ variable "location" {
 }
 
 variable "environment" {
-  description = "(Required) Environment code. Used for Naming. (2 characters) "
+  description = "(Required) Environment code. Used for Naming (3 characters). Changing this forces a new resource to be created. "
   type        = string
 }
 
@@ -22,6 +22,6 @@ variable "description" {
 
 variable "custom_tags" {
   description = "(Optional) Additional tags."
-  type        = map
+  type        = map(any)
   default     = {}
 }
