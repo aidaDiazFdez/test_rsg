@@ -28,7 +28,7 @@ jobs:
     - name: 'Az CLI login'
       uses: azure/login@v1
       with: # Set Azure credentials secret as an input
-        credentials: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
       
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
