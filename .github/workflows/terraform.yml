@@ -30,9 +30,12 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
     
-     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Login
-      run: az login
+    - name: 'Az CLI login'
+      uses: azure/login@v1
+      with:
+        client-id: "4aea4c80-13b6-493a-86b0-66d93c79e989"
+        tenant-id: "1bd6b3ce-8487-46c3-b092-ad88f48e3be6"
+        subscription-id: "db4cbe08-2ef4-4891-86e1-27cb2cc99256"
       
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
