@@ -29,14 +29,6 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
-
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
-    - name: Setup Terraform
-      uses: hashicorp/terraform-github-actions@master
-      with:
-        tf_actions_version: 1.1.6
-        tf_actions_subcommand: 'fmt'
-        tf_actions_working_dir: "./terraform"
     
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
