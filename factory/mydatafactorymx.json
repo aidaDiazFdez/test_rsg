@@ -1,0 +1,9 @@
+{
+	"name": "mydatafactorymx",
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "13ac2f98-c58c-4c67-8929-d115eda7f4b2",
+		"tenantId": "35595a02-4d6d-44ac-99e1-f9ab4cd872db"
+	}
+}
